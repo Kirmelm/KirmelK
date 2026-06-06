@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('arcade-contact');
 
-  // Кастомный обработчик ошибок
   const handleValidation = (input) => {
     const errorSpan = input.parentNode.querySelector('.error-msg');
     if (!errorSpan) return;
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Слушатель отправки формы
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const inputs = form.querySelectorAll('.arcade-input');
@@ -29,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
       handleValidation(input);
       if (!input.validity.valid) isFormValid = false;
 
-      // Живой трекинг ошибок после попытки сабмита
       if (!input.dataset.tracked) {
         input.addEventListener('input', () => handleValidation(input));
         input.dataset.tracked = 'true';
@@ -41,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.textContent = 'ОТПРАВКА СИГНАЛА...';
 
-      // Эмуляция отправки на бэк
+      
       setTimeout(() => {
         alert('Сигнал успешно транслирован. Миссия создана.');
         submitBtn.disabled = false;
