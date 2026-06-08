@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KirmelK</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, height=device-height">
+</head>
+<body>
+
+  <!-- Фон -->
+  <div class="crt-overlay"></div>
+
+  <header class="game-header">
+    <div class="container header-wrap">
+      <div class="player-profile">
+        <span class="avatar-box">[K]</span>
+        <div class="player-info">
+          <span class="player-name">KirmelK</span>
+          <span class="player-title">LVL 45 FRONTEND DEV</span>
+        </div>
+      </div>
+      <nav class="game-menu" aria-label="Игровое меню">
+        <a href="#stats" class="menu-item active">УМЕНИЯ</a>
+        <a href="#quests" class="menu-item">ПРИМЕРЫ РАБОТ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-layout">
+    
+    <!--Главный экран-->
+    <section class="screen-section" id="stats">
+      <div class="terminal-card">
+        <div class="card-header">
+          <span class="dot-red"></span> STATUS_REPORT.bed
+        </div>
+        <div class="hero-intro">
+          <h1 class="glitch-title">ПРИВЕТ, Я KIRMELK</h1>
+          <p class="hero-text">Я создаю продукты, а не только код.</p>
+        </div>
+
+        <div class="skill-tree-grid">
+          <div class="skill-node">
+            <span class="skill-name">JAVASCRIPT / TS</span>
+            <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+            <span class="skill-val">95%</span>
+          </div>
+          <div class="skill-node">
+            <span class="skill-name">REACT / NEXT.JS</span>
+            <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+            <span class="skill-val">90%</span>
+          </div>
+          <div class="skill-node">
+            <span class="skill-name">UI / UX ANIMATIONS</span>
+            <div class="progress-bar"><div class="progress-fill" style="width: 96%;"></div></div>
+            <span class="skill-val">96%</span>
+          </div>
+          <div class="skill-node">
+            <span class="skill-name">PERFORMANCE OPTIMIZATION</span>
+            <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+            <span class="skill-val">100%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Проекты-->
+    <section class="screen-section" id="quests">
+      <h2 class="section-title">// ВЫПОЛНЕННЫЕ КВЕСТЫ (ПРОЕКТЫ)</h2>
+      <div class="quest-list">
+        
+        <article class="quest-card">
+          <div class="quest-status completed">COMPLETED</div>
+          <div class="quest-body">
+            <h3 class="quest-title">Syper-mario</h3>
+            <p class="quest-desc">Уничтожил баги, упровление клавиатурой, полноценая копия.</p>
+          </div>
+          <a href="https://kirmelm.github.io/KirmelK-superMario/" class="quest-link" target="_blank" rel="noopener noreferrer">Перейти ↗</a>
+        </article>
+
+        <article class="quest-card">
+          <div class="quest-status completed">COMPLETED</div>
+          <div class="quest-body">
+            <h3 class="quest-title">Мои заметки</h3>
+            <p class="quest-desc">В прямом смысле мои заметки если дать доступ к сообщением будет оповещение, адаптация для телефонов </p>
+          </div>
+          <a href="https://kirmelm.github.io/-/" class="quest-link" target="_blank" rel="noopener noreferrer">Перейти ↗</a>
+        </article>
+        
+        <article class="quest-card">
+          <div class="quest-status completed">COMPLETED</div>
+          <div class="quest-body">
+            <h3 class="quest-title">Snake</h3>
+            <p class="quest-desc">Легендарная змейка в неоновом стиле,полная адаптацыя мобайл.</p>
+          </div>
+          <a href="https://kirmelm.github.io/KirmelK-Snake/" class="quest-link" target="_blank" rel="noopener noreferrer">Перейти ↗</a>
+        </article>
+
+        <article class="quest-card">
+          <div class="quest-status completed">github</div>
+          <div class="quest-body">
+            <h3 class="quest-title">github</h3>
+            <p class="quest-desc">Больше проектов здесь.</p>
+          </div>
+          <a href="https://github.com/repos" class="quest-link" target="_blank" rel="noopener noreferrer">Посмотреть больше проектов ↗</a>
+        </article>
+
+        <article class="quest-card">
+                    <div class="quest-body">
+            <h3 class="quest-title">Сертификаты </h3>
+            <h6>Google Документ</h6>
+          </div>
+          <a href="https://docs.google.com/document/d/12EoEaVNF2Kdeio_LXunBqcjUaPFx0p5jLX4gKf6ze50/edit?usp=sharing" class="quest-link" target="_blank" rel="noopener noreferrer">Посмотреть ↗</a>
+        </article>
+
+      </div>
+    </section>
+
+        <article class="quest-card">
+        <div class="direct-links">
+          <span class="direct-title">ПРЯМАЯ СВЯЗЬ:</span>
+          <a href="https://t.me/Konstantin_Kirmel" target="_blank" rel="noopener noreferrer" class="direct-item">TELEGRAM</a>
+          <a href="mailto:kirmelkofficial@gmail.com" class="direct-item">EMAIL</a>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="game-footer">
+    <div class="container footer-content">
+      <span>SYSTEM STATUS: STABLE</span> <!--СОСТОЯНИЕ СИСТЕМЫ: СТАБИЛЬНОЕ-->
+      <span>&copy; 2026 KIRMELK</span>
+    </div>
+  </footer>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
